@@ -8,3 +8,6 @@ Ref: [adventofcode.com/2023](https://adventofcode.com/2023)
 | Day | Part1 | Part2 | Comments                                    |
 |----:|:-----:|:-----:|---------------------------------------------|
 |  01 |  ⭐   |  ⭐   | This took SO much more time than expected.. |
+|  02 |       |       |                                             |
+|  03 |       |       |                                             |
+|  04 |       |       |                                             |
