@@ -5,5 +5,4 @@ pub fn main() {
     for line in lines {
         println!("{}", line);
     }
-
 }
