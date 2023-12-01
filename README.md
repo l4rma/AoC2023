@@ -2,6 +2,8 @@
 This is my first ever attempt at completing advent of code. I have next to no
 experience coding in rust. So im doing this mostly to check out Rust.
 
+Ref: [adventofcode.com/2023](https://adventofcode.com/2023)
+
 ## Progress
 | Day | Part1 | Part2 | Comments                                    |
 |----:|:-----:|:-----:|---------------------------------------------|
