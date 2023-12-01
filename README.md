@@ -4,5 +4,5 @@ experience coding in rust. So im doing this mostly to check out Rust.
 
 ## Progress
 | Day | Part1 | Part2 | Comments                                    |
-|-----|-------|-------|---------------------------------------------|
-| 1   | ⭐    | ⭐    | This took SO much more time than expected.. |
+|----:|:-----:|:-----:|---------------------------------------------|
+|  01 |  ⭐   |  ⭐   | This took SO much more time than expected.. |
