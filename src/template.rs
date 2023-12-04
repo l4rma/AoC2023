@@ -1,5 +1,4 @@
-// use crate::utils::lines_from_file;
-// use std::collections::HashMap;
+use crate::utils::lines_from_file;
 
 pub fn main() {
     let lines = lines_from_file("inputs/day2.txt");
@@ -36,6 +35,9 @@ mod tests {
         let lines: Vec<String> = example1.lines().map(String::from).collect();
         let expected = 0;
         let mut result = 0;
+    for line in lines {
+            todo!();
+    }
 
         assert_eq!(expected, result);
     }
@@ -47,6 +49,10 @@ mod tests {
         let lines: Vec<String> = example1.lines().map(String::from).collect();
         let expected = 0;
         let mut result = 0;
+
+    for line in lines {
+            todo!();
+    }
 
         assert_eq!(expected, result);
     }
