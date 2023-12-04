@@ -4,17 +4,37 @@ use std::collections::HashMap;
 // only 12 red cubes, 13 green cubes, and 14 blue cubes
 pub fn main() {
     let lines = lines_from_file("inputs/day2.txt");
-    let result = get_result_part1(lines);
-    let result_part2 = get_result_par2(lines);
+    let result = get_result_part1(lines.clone());
+    let result_part2 = get_result_par2(lines.clone());
     println!("(Part1) total: {:?}", result);
+    println!("(Part2) total: {:?}", result_part2);
 }
 
-fn get_result_par2(lines: Vec<String>) -> _ {
+fn get_result_par2(lines: Vec<String>) -> i32 {
     let mut result = 0;
-    let max_red = 12;
-    let max_green = 13;
-    let max_blue = 14;
-    let mut i = 1;
+
+    for line in lines {
+        // println!("{}", line);
+        let mut color_map: HashMap<String, i32> = HashMap::new();
+        let reveales: Vec<&str> = line[line.find(":").unwrap()+1..].split(";").collect();
+        for revealed in reveales {
+            let colors: Vec<&str> = revealed.split(",").collect();
+            for color in colors {
+                let color_name: String = color.trim()[color.trim().find(" ").unwrap()+1..].to_string();
+                let number: i32 = color.trim()[..color.trim().find(" ").unwrap()].to_string().parse::<i32>().unwrap();
+                if color_map.is_empty() {
+                    color_map.insert(color_name, number);
+                } else if color_map.get(&color_name).is_none() || color_map.get(&color_name).expect("msg") < &number {
+                    color_map.insert(color_name, number);
+                }
+            }
+        }
+        let red = color_map.get("red").expect("no reds");
+        let green = color_map.get("green").expect("no greens");
+        let blue = color_map.get("blue").expect("no blues");
+        let sub_total: i32 = red * blue * green;
+        result += sub_total;
+    }
     return result;
 }
 
@@ -124,13 +144,8 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
 ";
 
         let lines: Vec<String> = example2.lines().map(String::from).collect();
-        let expected = 8;
+        let expected = 2286;
         let mut result = 0;
-
-        let max_red = 12;
-        let max_green = 13;
-        let max_blue = 14;
-        let mut i = 1;
 
         for line in lines {
             // println!("{}", line);
@@ -148,10 +163,11 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
                     }
                 }
             }
-            i+=1;
-            println!("{:?}", i);
-            println!("{:?}", result);
-
+            let red = color_map.get("red").expect("no reds");
+            let green = color_map.get("green").expect("no greens");
+            let blue = color_map.get("blue").expect("no blues");
+            let sub_total: i32 = red * blue * green;
+            result += sub_total;
         }
 
         assert_eq!(expected, result);
