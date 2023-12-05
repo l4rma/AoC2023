@@ -89,10 +89,10 @@ pub fn get_result_part1(lines: Vec<String>) -> i32 {
 }
 
 fn get_result_par2(lines: Vec<String>) -> i32 {
-    let mut result = 0;
+    let result = 0;
 
     for line in lines {
-        // println!("{}", line);
+        println!("{}", line);
     }
     return result;
 }
@@ -119,7 +119,7 @@ mod tests {
         let mut i = 0;
         let mut parts: Vec<String> = Vec::new();
 
-        while true {
+        loop {
             if i == lines.len() {
                 break;
             }
@@ -199,10 +199,10 @@ mod tests {
 
         let lines: Vec<String> = example1.lines().map(String::from).collect();
         let expected = 0;
-        let mut result = 0;
+        let result = 0;
 
         for line in lines {
-            todo!();
+            println!("{}", line);
         }
 
         assert_eq!(expected, result);

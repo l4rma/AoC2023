@@ -2,7 +2,7 @@ use crate::utils::lines_from_file;
 
 pub fn main() {
     let lines = lines_from_file("inputs/day2.txt");
-    let result_par1 = get_result_part1(lines.clone());
+    let result_part1 = get_result_part1(lines.clone());
     let result_part2 = get_result_par2(lines.clone());
     println!("(Part1) total: {:?}", result_part1);
     println!("(Part2) total: {:?}", result_part2);
@@ -35,9 +35,9 @@ mod tests {
         let lines: Vec<String> = example1.lines().map(String::from).collect();
         let expected = 0;
         let mut result = 0;
-    for line in lines {
+        for line in lines {
             todo!();
-    }
+        }
 
         assert_eq!(expected, result);
     }
@@ -50,9 +50,9 @@ mod tests {
         let expected = 0;
         let mut result = 0;
 
-    for line in lines {
+        for line in lines {
             todo!();
-    }
+        }
 
         assert_eq!(expected, result);
     }
