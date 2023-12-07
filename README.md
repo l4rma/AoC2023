@@ -5,9 +5,10 @@ experience coding in rust. So im doing this mostly to check out Rust.
 Ref: [adventofcode.com/2023](https://adventofcode.com/2023)
 
 ## Progress
-| Day | Part1 | Part2 | Comments                                                                                              |
-|----:|:-----:|:-----:|-------------------------------------------------------------------------------------------------------|
-|  01 |  ⭐   |  ⭐   | This took SO much more time than expected..                                                           |
-|  02 |  ⭐   |  ⭐   | Part 2 much easier than part 1.                                                                       |
-|  03 |  ⭐   |  ⭐   | Part 2 much harder than part 2 😅                                                                     |
-|  04 |  ⭐   |  ⭐   | Completed part 2 without realizing b/c it took forever to run the code, so I kept trying to "fix" it. |
+| Day | Part1 | Part2 | Comments                                                                                                             |
+|----:|:-----:|:-----:|----------------------------------------------------------------------------------------------------------------------|
+|  01 |  ⭐   |  ⭐   | This took SO much more time than expected..                                                                          |
+|  02 |  ⭐   |  ⭐   | Part 2 much easier than part 1.                                                                                      |
+|  03 |  ⭐   |  ⭐   | Part 2 much harder than part 2 😅                                                                                    |
+|  04 |  ⭐   |  ⭐   | Brute forced part 2. Completed it without realizing b/c it took forever to run the code. (time cmd returned 409.05s) |
+|  05 |       |       |                                                                                                                      |
